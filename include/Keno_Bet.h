@@ -7,7 +7,8 @@ using set_of_numbers_type = std::vector< number_type >;
 
 class KenoBet {
     public:
-        KenoBet( ) : m_wage(0);
+        /*tinha um erro de compilação aqui*/
+        KenoBet( );
         bool add_number( number_type spot_ );
         bool set_wage( cash_type wage_ );
         void reset( void );

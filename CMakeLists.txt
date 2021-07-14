@@ -19,11 +19,3 @@ add_executable( TesteLP1
                 src/main.cpp )
 
 # The end
-
-/*
-    mkdir build
-    cd build
-    cmake ../
-    cmake --build .
-    ./TesteLP1
-*/

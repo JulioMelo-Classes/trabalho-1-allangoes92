@@ -6,7 +6,7 @@ using namespace std;
 
 //! Creates an empty Keno bet.
 KenoBet::KenoBet( ) : m_wage(0)
-{ /* empty */ };
+{ /* empty */ }
 
 /*! Adds a number to the spots only if the number is not already there.
     @param spot_ The number we wish to include in the bet.

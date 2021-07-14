@@ -1,8 +1,18 @@
 #include <iostream>
 #include <vector>
-#include "Keno_Bet.cpp"
-#include "../data/bet_01.dat"
+#include "Keno_Bet.h" //não se inclui os .cpp, como já mostrei na aula e você sabe de itp, incluimos o .h e compilamos o .cpp separadamente
+//include "../data/bet_01.dat" isso aqui não faz sentido
 using namespace std;
+
+/*
+Avaliação
+Processamento do Arquivo de Entrada: 0
+Execução correta: 0
+Interfcace Textual: 0
+Documentação: 0.5 (não usou o formato doxygen)
+Compilação automatizada: 0 (não compila)
+Organização em src, include, build, data: 1
+*/
 
 /*!
  *Esta função implementa um sub algoritmo utilizado pelo Quick Sort.
@@ -28,11 +38,13 @@ int particiona (std::vector<int> & A, int left, int right){
     return (low+1);
 }
 
+/*
+Eu entendi que você quis implementar o quicksort, mas você não soube nem usar essa função...
+*/
 /*!
  *Esta função implementa o algoritmo Quick Sort.
  *Ele utiliza como parâmetro um vetor de alocação dinâmica e os limites esquerdo e direito.
 */
-
 void quicksort(std::vector<int> & A, int left, int right){
 	int pivo;
     if(left<right){
@@ -51,7 +63,7 @@ int main(int argc, char *argv[]){
   cout << ">>> Lendo arquivo de apostas [" << "data/bet_01.dat" << "], por favor aguarde.." << endl;
   
   cout << "   --------------------------------------------------------------------" << endl;
-  k.m_wage = argv[1];
+  k.m_wage = argv[1]; //a wage deve vir no arquivo de apostas
   for(int i=2; i<argc; i++)
     k.m_spots.push_back(argv[i]);
   cout << "Você apostará um total de $" << k.get_wage() << " créditos." << endl;
